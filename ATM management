@@ -1,0 +1,30 @@
+name="ashok"
+password="ashok234"
+
+a_name=str(input("enter user name:"))
+a_password=str(input("enter atm pin:"))
+if a_name==name and a_password==password:
+    print("1.debit"
+          "2.credit"
+          "3.check balance"
+          "4.card details")
+    amont=5950
+    option=int(input("enter the option:"))
+    if option==1:
+        wid=int(input("amount you credit:"))
+        amont+=wid
+        print("total amount of bank:",amont)
+    elif option==2:
+        det=int(input("amount you debit:"))
+        amont-=det
+        print("total amount of bank:",amont)
+    elif option==3:
+        print("-----Total amount in bank-----")
+        print("username:",name)
+        print("bank balances:",amont)
+        print("-----THANK YOU-----")
+    elif option==4:
+        password2=password.replace("ashok234","ASdf123")
+        print(password2)
+else:
+    print("you enter inviad name or password")
